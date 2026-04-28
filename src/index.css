@@ -565,3 +565,6 @@ body {
   padding-bottom: 70px; /* равный высоте нижней полосы */
 }
 
+body {
+  background-image: url('/bg-left.png'), url('/bg-right.png') !important;
+}
