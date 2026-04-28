@@ -58,15 +58,28 @@ All colors MUST be HSL.
     min-height: 100vh;
     background-color: black;
     position: relative;
-    isolation: isolate;
   }
 
   body::before {
-    content: none;
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -2;
+    background-image: url('/bg-left.png'), url('/bg-right.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+    background-size: 50vw 120%, 50vw 120%;
+    filter: brightness(1) contrast(1) blur(0.3px);
   }
 
   body::after {
-    content: none;
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.4); /* ����������� */
   }
 
   #root {
@@ -74,17 +87,6 @@ All colors MUST be HSL.
     z-index: 1;
   }
 }
-
-.site-bg {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: center center, left center, right center;
-  background-size: 100% 100%, 50vw 120%, 50vw 120%;
-}
-
 /* Coin element styling and animations */
 .coin-element {
   width: 100px;
@@ -543,4 +545,6 @@ All colors MUST be HSL.
   padding-top: 80px;    /* равный высоте верхней полосы */
   padding-bottom: 70px; /* равный высоте нижней полосы */
 }
+
+
 
