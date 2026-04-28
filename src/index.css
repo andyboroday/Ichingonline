@@ -59,6 +59,23 @@ All colors MUST be HSL.
     position: relative;
   }
 
+  #root::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+
+  background-image: url('/bg-left.png'), url('/bg-right.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, right center;
+  background-size: 50vw 120%, 50vw 120%;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+/*
   body::before {
     content: "";
     position: fixed;
@@ -78,8 +95,8 @@ All colors MUST be HSL.
     inset: 0;
     pointer-events: none;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.4); /* регулируешь */
-  }
+    background: rgba(0, 0, 0, 0.4);  регулируешь 
+  }     */
 
   #root {
     position: relative;
