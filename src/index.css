@@ -79,7 +79,6 @@ All colors MUST be HSL.
 
 #root {
   position: relative;
-  z-index: 1;
 }
 /*
   body::before {
