@@ -57,14 +57,6 @@ All colors MUST be HSL.
     margin: 0;
     min-height: 100vh;
     background-color: black;
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('/bg-left.png'),
-      url('/bg-right.png');
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: center center, left center, right center;
-    background-size: 100% 100%, 50vw 120%, 50vw 120%;
-    background-attachment: fixed, fixed, fixed;
     position: relative;
     isolation: isolate;
   }
@@ -79,8 +71,22 @@ All colors MUST be HSL.
 
   #root {
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
+}
+
+.site-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('/bg-left.png'),
+    url('/bg-right.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center center, left center, right center;
+  background-size: 100% 100%, 50vw 120%, 50vw 120%;
 }
 
 /* Coin element styling and animations */
