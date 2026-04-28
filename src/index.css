@@ -51,49 +51,25 @@ All colors MUST be HSL.
     min-height: 100%;
   }
 
-body {
-  background-image:
-    url('/bg-left.png'),
-    url('/bg-right.png');
+  html {
+    background-color: black;
 
-  background-repeat: no-repeat, no-repeat;
-  background-position: left center, right center;
-  background-size: 50vw 100vh, 50vw 100vh;
-}
+    background-image:
+      url('/bg-left.png'),
+      url('/bg-right.png');
 
-#root {
-  background: transparent !important;
-}
-
-#root {
-  position: relative;
-}
-/*
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: -2;
-    background-image: url('/bg-left.png'), url('/bg-right.png');
     background-repeat: no-repeat, no-repeat;
     background-position: left center, right center;
     background-size: 50vw 120%, 50vw 120%;
-    filter: brightness(1) contrast(1) blur(0.3px);
   }
 
-  body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: -1;
-    background: rgba(0, 0, 0, 0.4);  регулируешь 
-  }     */
+  body {
+    margin: 0;
+    min-height: 100vh;
+  }
 
   #root {
     position: relative;
-    z-index: 1;
   }
 }
 
