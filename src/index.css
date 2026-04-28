@@ -72,7 +72,6 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-position: left center, right center;
     background-size: 50vw 120%, 50vw 120%;
-    filter: brightness(1) contrast(1) blur(0.3px);
   }
 
   body::after {
@@ -81,7 +80,7 @@ body {
     inset: 0;
     pointer-events: none;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.4); /* регулируешь */
+    background: rgba(0, 0, 0, 0.4);  регулируешь */
   }
 
   #root {
