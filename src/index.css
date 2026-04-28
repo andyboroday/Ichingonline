@@ -73,7 +73,8 @@ body {
     background-position: left center, right center;
     background-size: 50vw 120%, 50vw 120%;
   }
-
+  
+/*
   body::after {
     content: "";
     position: fixed;
