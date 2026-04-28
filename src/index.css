@@ -63,7 +63,7 @@ body {
 
   background-repeat: no-repeat, no-repeat;
   background-position: left center, right center;
-  background-size: 50vw 120%, 50vw 120%;
+  background-size: 50vw 100vh, 50vw 100vh;
 }
 
 #root {
