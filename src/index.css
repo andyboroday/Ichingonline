@@ -45,11 +45,14 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  html,
-  body,
-  #root {
-    min-height: 100%;
-  }
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+}
 
   body {
     @apply text-foreground;
