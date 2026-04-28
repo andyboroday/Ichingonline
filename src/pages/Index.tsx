@@ -3,8 +3,6 @@ import { useState, useCallback, useMemo, useRef, CSSProperties } from "react";
 import coinSound from "../assets/coinsound.wav";
 
 import sticksound from "../assets/sticksound.wav";
-import bgLeft from "../assets/bg-left.png";
-import bgRight from "../assets/bg-right.png";
 
 
 // I Ching hexagram data - all 64 hexagrams (trilingual)
@@ -1060,14 +1058,6 @@ const Index = () => {
 
 return (<>
 
-    <div
-      className="site-bg"
-      aria-hidden="true"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgLeft}), url(${bgRight})`,
-      }}
-    />
-
     <div className="pattern-strip pattern-strip--top" />
 
     <div className="page-content min-h-screen flex flex-col items-center justify-start px-4">
@@ -1203,3 +1193,5 @@ return (<>
 };
 
 export default Index;
+
+
