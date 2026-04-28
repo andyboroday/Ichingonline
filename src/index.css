@@ -74,9 +74,7 @@ All colors MUST be HSL.
   background-position: left center, right center;
   background-size: 50vw 120%, 50vw 120%;
 
-  /* вот это затемнение */
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: darken;
+
 }
 
 #root {
