@@ -532,10 +532,4 @@ All colors MUST be HSL.
   padding-bottom: 70px; /* равный высоте нижней полосы */
 }
 
-html {
-  background: black !important;
-}
 
-body {
-  background: transparent !important;
-}
