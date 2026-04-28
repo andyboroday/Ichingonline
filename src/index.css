@@ -80,10 +80,6 @@ All colors MUST be HSL.
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('/bg-left.png'),
-    url('/bg-right.png');
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center center, left center, right center;
   background-size: 100% 100%, 50vw 120%, 50vw 120%;
